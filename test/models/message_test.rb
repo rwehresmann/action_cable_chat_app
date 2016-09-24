@@ -14,4 +14,9 @@ class MessageTest < ActiveSupport::TestCase
     @message.content = " "
     assert !@message.valid?
   end
+
+  test "should find mentions" do
+    @message.content = "This is an @example, this @not"
+    assert @message.mentions.length == 1
+  end
 end
