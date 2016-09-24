@@ -6,4 +6,4 @@ test:
 
 production:
   adapter: redis
-  url: redis://localhost:6379/1
+  url: redis://redistogo:95adf1692f2c3913d42b7967e0543c4f@viperfish.redistogo.com:11586/
